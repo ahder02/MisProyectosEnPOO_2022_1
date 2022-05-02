@@ -6,7 +6,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class AppFiguras {
-    public static final int ANGULOCENTRAL = 72; // 360/5 para el pentagono regular.
+    public static final int ANGULOGENERAL = 360;
+    public static final int NUMERODELADOS = 5;
+    public static final int ANGULOCENTRAL = ANGULOGENERAL/NUMERODELADOS; // 360/5 para el pentagono regular.
 
     public static void main(String[] args) {
         Circulo circulo = new Circulo(10);
