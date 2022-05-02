@@ -1,4 +1,4 @@
-package parcial.dominio;
+/*package parcial.dominio;
 
 import Taller1.agenda.dominio.Contacto;
 import Taller1.dispensador.dominio.Snack;
@@ -100,3 +100,4 @@ public class EPS {
         this.pacientes.sort(Comparator.comparing(Paciente::getNombre));
     }
 }
+*/

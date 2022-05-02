@@ -1,4 +1,4 @@
-package parcial.dominio;
+/*package parcial.dominio;
 
 public class Enfermedad {
     private String nombre;
@@ -30,3 +30,4 @@ public class Enfermedad {
         this.nombre = nombre;
     }
 }
+*/

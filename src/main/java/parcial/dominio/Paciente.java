@@ -1,4 +1,4 @@
-package parcial.dominio;
+/*package parcial.dominio;
 
 public class Paciente {
     private long cedula;
@@ -35,3 +35,4 @@ public class Paciente {
         this.enfermedades = enfermedades;
     }
 }
+*/
