@@ -6,15 +6,15 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class AppFiguras {
-    public static final int ANGULOGENERAL = 360;
-    public static final int NUMERODELADOS = 5;
-    public static final int ANGULOCENTRAL = ANGULOGENERAL/NUMERODELADOS; // 360/5 para el pentagono regular.
+    public static final int ANGULO_GENERAL = 360;
+    public static final int NUMERO_DE_LADOS = 5;
+    public static final int ANGULO_CENTRAL = ANGULO_GENERAL/NUMERO_DE_LADOS; // 360/5 para el pentagono regular.
 
     public static void main(String[] args) {
         Circulo circulo = new Circulo(10);
         Cuadrado cuadrado = new Cuadrado(2, 3);
-        TrianguloRectangulo trianguloRectangulo = new TrianguloRectangulo(3,4,5);
-        PentagonoRegular pentagonoRegular = new PentagonoRegular(5, ANGULOCENTRAL);
+        TrianguloRectangulo trianguloRectangulo = new TrianguloRectangulo(3,4);
+        PentagonoRegular pentagonoRegular = new PentagonoRegular(5, ANGULO_CENTRAL);
 
         List<FiguraGeometrica> figuras = new ArrayList<>();
         figuras.add(circulo);

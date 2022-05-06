@@ -1,14 +1,14 @@
 package Desafio_3.dominio;
 
 public class TrianguloRectangulo extends FiguraGeometrica {
-    private int cateto1;
-    private int cateto2;
-    private int hipotenusa;
+    private double cateto1;
+    private double cateto2;
+    private double hipotenusa;
 
-    public TrianguloRectangulo(int cateto1, int cateto2, int hipotenusa) {
+    public TrianguloRectangulo(double cateto1, double cateto2) {
         this.cateto1 = cateto1;
         this.cateto2 = cateto2;
-        this.hipotenusa = hipotenusa;
+        this.hipotenusa = Math.sqrt(Math.pow(cateto1,2) + Math.pow(cateto2,2));
     }
 
     @Override

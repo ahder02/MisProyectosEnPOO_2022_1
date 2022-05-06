@@ -1,9 +1,9 @@
 package Desafio_3.dominio;
 
 public class Circulo extends FiguraGeometrica {
-    private int radio;
+    private double radio;
 
-    public Circulo(int radio) {
+    public Circulo(double radio) {
         this.radio = radio;
     }
 
