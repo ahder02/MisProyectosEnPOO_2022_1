@@ -1,14 +1,14 @@
 package Desafio_3_Facturacion.dominio;
 
-import static Desafio_3_Facturacion.app.AppFacturacion.IVA;
+import java.time.LocalDate;
 
 public class FacturaSinIVA extends Factura {
-    public FacturaSinIVA(String cliente, long valor) {
-        super(cliente, valor);
+    public FacturaSinIVA(String cliente, long valor, LocalDate fechaVencimiento) {
+        super(cliente, valor, fechaVencimiento);
     }
 
     @Override
     public long calcularTotal() {
-        return this.valor;
+        return this.getValor();
     }
 }
