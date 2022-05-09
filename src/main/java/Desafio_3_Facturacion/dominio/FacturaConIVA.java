@@ -2,9 +2,10 @@ package Desafio_3_Facturacion.dominio;
 
 import java.time.LocalDate;
 
-import static Desafio_3_Facturacion.app.AppFacturacion.valorIVA;
 
 public class FacturaConIVA extends Factura{
+    public static final short valorIVA = 19;
+
     public FacturaConIVA(String cliente, long valor, LocalDate fechaVencimiento) {
         super(cliente, valor, fechaVencimiento);
     }
@@ -15,6 +16,6 @@ public class FacturaConIVA extends Factura{
 
     @Override
     public long calcularTotal() {
-        return this.getValor() + (valorIVA * this.getValor())/100;
+        return this.getValor() + calcularIva();
     }
 }
